@@ -18,8 +18,8 @@
 */
 body {
   margin: 0;
-  font-family: Arial;
-  color: black; }
+  font-family: Futura, Arial;
+  color: white; }
 
 h1, h2, h4, h5, h6 {
   margin: 0;
@@ -62,7 +62,13 @@ img {
 .landing {
   background-image: url("../images/tobais.png");
   background-size: cover;
-  height: 500; }
+  height: 500;
+  grid-template-rows: 100px auto; }
+
+.landing h1 {
+  grid-column: 1/13;
+  grid-row: 2/3;
+  margin: auto; }
 
 /*================Footer==============*/
 .footer {
@@ -90,7 +96,11 @@ img {
 
 .vinen-tekst {
   grid-column: 9/13;
-  background-color: #2797f7; }
+  background-image: url("../images/butik.jpg"); }
+
+.overlayfarvered {
+  background-color: rgba(247, 9, 0, 0.41);
+  height: 100%; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------gaarden-----------------------
@@ -115,7 +125,11 @@ img {
 .instagram-tal {
   grid-column: 1/4;
   grid-row: 1/3;
-  background-color: #42cef7; }
+  background-image: url("../images/butik.jpg"); }
+
+.overlayfarvewhite {
+  background-color: rgba(247, 247, 247, 0.8);
+  height: 100%; }
 
 .instagrambillede {
   background-image: url("../images/butik.jpg"); }
@@ -168,11 +182,44 @@ img {
   height: 500;
   background-color: #f70f95; }
 
+/*========================================================================
+ ==============================Contact====================================
+=========================================================================*/
+/*-------------------------------------------------------------------------
+----------------------------------Kontaktinfo-----------------------
+---------------------------------------------------------------------------*/
+.kontaktinfo {
+  display: grid;
+  height: 500;
+  background-color: #e3f787; }
+
+.form {
+  grid-column: 1/9;
+  background-color: #f6f7fd; }
+
+.find-us {
+  grid-column: 9/13;
+  background-color: #69f756; }
+
+/*-------------------------------------------------------------------------
+----------------------------------googlemaps-----------------------
+---------------------------------------------------------------------------*/
+.googlemaps {
+  display: grid;
+  height: 500;
+  background-color: #6fcaf7; }
+
 /*================Responsivitet===============*/
 @media screen and (min-width: 660px) {
+  h1 {
+    font-size: 7vw; }
+
   /*================Forside===============*/
   /*================Kontakt===============*/ }
 @media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 100px; }
+
   /*================Forside===============*/
   /*================Kontakt===============*/ }
 /*================BURGER MENU===============*/
