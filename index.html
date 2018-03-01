@@ -1,11 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css"
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Dominio De Pontas</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/75970a48c3.js"></script>
+    <script src="javascript/script.js"></script>
+
+    <!--Linker til jquery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--Linker til smoothscroll fil-->
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+
+
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
+
+<!-- i <body> har man alt indhold på siden -->
 <body>
-<h1>hej</h1>
+
+<!--- Menu Overlay. Dette er skjult indtil man aktivere det med javascript ----->
+
+<div id="myNav" class="overlay">
+
+    <!-- Overlay content. De links der kommer frem -->
+    <div class="overlay-content">
+
+        <!-- onclick lukker overlay. #top går til a tag med navn top. class smoothscroll aktivere smoothscroll -->
+        <a href="#top" class="smoothScroll" onclick="closeNav()">FORSIDE</a>
+
+        <a href="undersider/tobias.html">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <!-- onclick lukker overlay. #footer går til a tag med navn footer. class smoothscroll aktivere smoothscroll -->
+
+    </div>
+</div>
+
+<!--- landing------>
+<section class="grid landing">
+
+    <!--- HEADER ------->
+    <div class="header forside">
+        
+
+
+        <a name="top"></a>
+
+        <!-- Det her er knappen der åbner og lukker menuen. -->
+        <button class="hamburger hamburger--spring" type="button" >
+
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+
+        </button>
+
+        <!-- her er javascript der åbner og lukker menuen -->
+        <script>
+            // leder efter noget med klassen .hamburger
+            var hamburger = document.querySelector(".hamburger");
+
+            // gør at der sker noget når man klikker på .hamburger
+            hamburger.addEventListener("click", function() {
+
+                //her er et if else statement
+
+                //hvis .hamburger har klassen is-active sættes værdien på overlay width til 0%
+                if (hamburger.classList.contains("is-active")) {
+                    document.getElementById("myNav").style.width = "0%";
+                    //ellers sættes værdien til 100%
+                } else {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                //skifter mellem at knappen med .hamburger har klassen "is-active"
+                hamburger.classList.toggle("is-active");
+            });
+        </script>
+
+    </div>
+
+</section>
+
+<!--- vinen------>
+<section class="grid vinen">
+
+    <div class="vinen-flasken">
+
+    </div>
+
+    <div class="vinen-label">
+
+    </div>
+
+    <div class="vinen-tekst">
+
+    </div>
+
+
+</section>
+
+<!---gaarden----->
+<section class="grid gaarden">
+
+    <div class="gaarden-beskrivelse">
+        <h3 style="text-align: center">Domino de Pontas</h3>
+
+    </div>
+
+
+
+</section>
+
+<!---instagram----->
+<section class="grid instagram">
+
+    <div class="instagram-tal">
+
+    </div>
+
+    <div class="instagrambillede billede1">
+
+    </div>
+
+    <div class="instagrambillede billede2">
+
+    </div>
+
+    <div class="instagrambillede billede3">
+
+    </div>
+
+    <div class="instagrambillede billede4">
+
+    </div>
+
+    <div class="instagrambillede billede5">
+
+    </div>
+
+    <div class="instagrambillede billede6">
+
+    </div>
+
+
+</section>
+
+<!---stedet---->
+<section class="grid stedet">
+
+    <div class="stedet-beskrivelse">
+        <h1>The best place to make <span class="red">wine</span></h1>
+
+    </div>
+
+    <div class="stedet-boks">
+
+    </div>
+
+</boks>
+
+
+</section>
+
+<!---kort----->
+<section class="grid kort">
+
+
+
+</section>
+
+<section class="grid footer">
+
+
+
+</section>
+
 </body>
-</html>
