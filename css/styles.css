@@ -287,7 +287,7 @@ img {
   top: 0;
   background-color: black;
   /* Black fallback color */
-  background-color: rgba(247, 216, 136, 0.9);
+  background-color: rgba(117, 0, 2, 0.9);
   /* Black w/opacity */
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -316,7 +316,6 @@ img {
   /* Display block instead of inline */
   transition: 0.3s;
   /* Transition effects on hover (color) */
-  font-family: odin;
   letter-spacing: 5px;
   font-weight: 100; }
 
