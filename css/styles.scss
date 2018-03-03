@@ -140,8 +140,44 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .footer {
   display: grid;
   height: $sektion-hojde;
-  background-color: #f6f76a;
+  background-image: url("../images/footer_img_bw.jpg");
+  background-size: cover;
 }
+
+.contact_footer{
+  grid-column: 4/9;
+  margin-left: auto;
+}
+
+.getintouch{
+  grid-column: 4/9;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.contact_flex{
+  grid-column: 3/10;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.contect_info{
+  margin: 10px;
+}
+
+.SoMe{
+  grid-column: 4/9;
+  display: flex;
+  justify-content: center;
+}
+
+.SoMe_icon{
+  margin: 5px;
+}
+
+
 
 /*========================================================================
  ==============================forside====================================
@@ -337,6 +373,12 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   // Alt over 660. Tablet og Desktop
   h1{
     font-size: 7vw;
+  }
+
+  .contact_flex{
+    display: flex;
+    -webkit-flex: flex;
+    justify-content: center;
   }
 
   /*================Forside===============*/

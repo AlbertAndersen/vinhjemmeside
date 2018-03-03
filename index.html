@@ -21,6 +21,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://use.fontawesome.com/75970a48c3.js"></script>
     <script src="javascript/script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <!--Linker til jquery -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -223,11 +224,37 @@
 
 <!--- footer------>
 
-<section class="grid footer">
+<footer class="grid footer">
     <a name="footer"></a>
-    <h1>contact</h1>
+    <h1 class="contact_footer">contact</h1>
 
+    <div class="getintouch">Get in touch</div>
 
-</section>
+    <div class="contact_flex" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+
+        <div class="contect_info"><i class="fas fa-phone" data-fa-transform="rotate-90"></i>
+            <span itemprop="telephone">20 30 20 30</span>
+        </div>
+
+        <div class="contect_info"><i class="fas fa-map-marker-alt"></i>
+            <span itemprop="streetAddress">Vej 3</span>,
+            <span itemprop="addressLocality">Byispanien, spanien</span>
+        </div>
+
+        <div class="contect_info"><i class="far fa-envelope"></i>
+            <span itemprop="email">Contact@pontas.com</span>
+        </div>
+
+    </div>
+
+    <div class="getintouch">Follow us</div>
+
+    <div class="SoMe">
+    <div class="SoMe_icon"> <i class="fab fa-facebook-square fa-2x"></i> </div>
+
+    <div class="SoMe_icon"> <i class="fab fa-instagram fa-2x"></i> </div>
+    </div>
+
+</footer>
 
 </body>
