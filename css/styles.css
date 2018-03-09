@@ -243,7 +243,9 @@ img {
   grid-column: 1/10; }
 
 .stedet-boks {
-  background-color: #f6f7fd;
+  background-image: url("../images/muscat-kasse.png");
+  background-position: center;
+  background-size: cover;
   grid-column: 10/13; }
 
 /*-------------------------------------------------------------------------

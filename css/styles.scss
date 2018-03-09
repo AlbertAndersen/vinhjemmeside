@@ -321,6 +321,8 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 }
 .stedet-boks{
   background-image: url("../images/muscat-kasse.png");
+  background-position: center;
+  background-size: cover;
   grid-column: 10/13;
 }
 
