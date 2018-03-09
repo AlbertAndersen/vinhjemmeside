@@ -349,7 +349,11 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .form {
   grid-column: 1/9;
-  background-color: #f6f7fd;
+  background-color: #a0a0a0;
+}
+
+.region_beskrivelse{
+  margin: 30px;
 }
 
 .find-us {
