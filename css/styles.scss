@@ -316,7 +316,9 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   background-color: #c4f732;
 }
 .stedet-beskrivelse{
-  background-color: #69f756;
+  background-image: url("../images/stedet.png");
+  background-position: center;
+  background-size: cover;
   grid-column: 1/10;
 }
 .stedet-boks{
