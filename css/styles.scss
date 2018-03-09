@@ -192,14 +192,14 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 }
 .vinen-flasken {
   grid-column: 1/5;
-  background-image: url("../images/merlot-falske.jpg");
+  background-image: url("../images/wineglass.png");
   background-position: center;
   background-size: cover;
 }
 
 .vinen-label {
   grid-column: 5/9;
-  background-image: url("../images/merlot-kasse.jpg");
+  background-image: url("../images/merlot.png");
   background-position: center;
   background-size: cover;
 }
@@ -335,7 +335,10 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .kort {
   display: grid;
   height: $sektion-hojde;
-  background-color: #f70f95;
+  background-image: url("../images/kort.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*========================================================================
@@ -362,7 +365,9 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .find-us {
   grid-column: 9/13;
-  background-color: #69f756;
+  background-image: url("../images/propper.png");
+  background-position: inherit;
+  background-size: cover;
 }
 
 /*-------------------------------------------------------------------------
