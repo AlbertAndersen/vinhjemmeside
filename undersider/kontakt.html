@@ -120,11 +120,31 @@
 
 <!---googlemaps------>
 
-<section class="grid googlemaps">
+<section class="grid googlemaps" id="map">
 
 
 
 </section>
+
+<script>
+    function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(42.816667, -1.65),
+            zoom: 8,
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(42.816667, -1.65),
+            map: map,
+        });
+        google.maps.event.addListener(marker,'click',function() {
+            map.setZoom(10);
+            map.setCenter(marker.getPosition());
+        });
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC797quRNWIzc71cy2Ay6lB4bdxVfPentg&callback=myMap"></script>
 
 <!--- footer------>
 
