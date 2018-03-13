@@ -457,6 +457,11 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
  }
 
+  .form {
+    grid-column: 1/13;
+
+  }
+
   /*================vin===============*/
 
   .vinen-flasken {

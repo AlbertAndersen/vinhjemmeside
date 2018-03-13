@@ -341,6 +341,9 @@ img {
   .tablet {
     display: none; }
 
+  .form {
+    grid-column: 1/13; }
+
   /*================vin===============*/
   .vinen-flasken {
     grid-column: 1/7; }
