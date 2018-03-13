@@ -44,6 +44,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+.sort {
+  color: black; }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -178,7 +181,9 @@ img {
   background-size: cover; }
 
 .gaarden-beskrivelse {
-  grid-column: 3/11; }
+  grid-column: 2/12;
+  max-width: 700px;
+  margin: auto; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------instagram-----------------------
@@ -359,7 +364,10 @@ img {
   .vinen-tekst {
     grid-row: 1/2;
     grid-column: 1/13;
-    height: 500px; }
+    padding-bottom: 17px; }
+
+  .overlayfarvered {
+    padding-bottom: 17px; }
 
   /*================Gaarden===============*/
   .gaarden {

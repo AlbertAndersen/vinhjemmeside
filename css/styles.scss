@@ -64,7 +64,9 @@ img {
   height: auto; // H¯jden skal tilpasse sig
 }
 
-
+.sort {
+  color: black;
+}
 
 //Farve variabler
 $color-red: #750002;
@@ -241,9 +243,12 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   background-size: cover;
 }
 
-.gaarden-beskrivelse {
-  grid-column: 3/11;
+.gaarden-beskrivelse{
+  grid-column: 2/12;
+  max-width: 700px;
+  margin: auto;
 }
+
 
 /*-------------------------------------------------------------------------
 ----------------------------------instagram-----------------------
@@ -486,8 +491,11 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   .vinen-tekst {
     grid-row: 1/2;
     grid-column: 1/13;
-    height: 500px;
+    padding-bottom: 17px;
+  }
 
+  .overlayfarvered {
+   padding-bottom: 17px;
   }
   /*================Gaarden===============*/
   .gaarden{
