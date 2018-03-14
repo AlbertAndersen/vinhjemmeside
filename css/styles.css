@@ -306,7 +306,7 @@ img {
   grid-column: 1/9;
   background-color: lightgray; }
 
-.region_beskrivelse {
+.region_beskrivelse, .newletter {
   margin: 30px; }
 
 .find-us {
@@ -314,6 +314,20 @@ img {
   background-image: url("../images/propper.png");
   background-position: inherit;
   background-size: cover; }
+
+#conin {
+  height: 30px;
+  width: 400px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 7px 2px;
+  font-weight: normal;
+  margin: 2px 0; }
+
+.conlist {
+  font-size: 20px; }
 
 /*-------------------------------------------------------------------------
 ----------------------------------googlemaps-----------------------

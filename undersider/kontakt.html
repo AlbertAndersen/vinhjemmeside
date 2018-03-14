@@ -115,13 +115,47 @@
             og informationer om begivenhedsrige events
         </div>
 
-        <div class="nyhedsinput "> id
+        <form action="/action_page.php" class="newletter">
+            <input type="text" name="firstname" placeholder="Name" id="conin">
+            <br><br>
+            <input type="text" name="mail" placeholder="E-mail" id="conin">
+            <br><br>
+            <div class="ghost-button" id="send-alert">Send</div>
+        </form>
 
-        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#send-alert").click(function(){
+                    alert("WARNING! This feature is unavailable at the moment.");
+                });
+            });
+        </script>
 
     </div>
 
     <div class="find-us tablet">
+        <h2>FIND US</h2>
+
+        <br><br>
+
+        <div class="conlist" itemscope itemtype="http://schema.org/PostalAddress">
+        <ul style="list-style-type:none">
+            <li><i class="fa fa-phone" data-fa-transform="rotate-90"></i>
+                <span itemprop="telephone">20 30 20 30</span></li>
+
+            <br><br>
+
+            <li><i class="fa fa-map-marker"></i>
+                <span itemprop="streetAddress">Vej 3</span>,
+                <span itemprop="addressLocality">Byispanien, spanien</span></li>
+
+            <br><br>
+
+            <li><i class="fa fa-envelope"></i>
+                <span itemprop="email">Contact@pontas.com</span></li>
+        </ul>
+        </div>
 
     </div>
 

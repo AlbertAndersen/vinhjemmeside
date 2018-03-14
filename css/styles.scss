@@ -394,7 +394,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   background-color: lightgray;
 }
 
-.region_beskrivelse{
+.region_beskrivelse,.newletter{
   margin: 30px;
 }
 
@@ -404,6 +404,23 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   background-position: inherit;
   background-size: cover;
 }
+
+#conin{
+  height: 30px;
+  width: 400px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 7px 2px;
+  font-weight: normal;
+  margin: 2px 0;
+}
+
+.conlist{
+  font-size: 20px;
+}
+
 
 /*-------------------------------------------------------------------------
 ----------------------------------googlemaps-----------------------
