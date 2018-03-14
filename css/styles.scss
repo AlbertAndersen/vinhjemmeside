@@ -103,6 +103,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .ghost-button:hover, .ghost-button:active {
   color: $color-red;
   background: #ffffff;
+  cursor: pointer;
 }
 
 
@@ -371,6 +372,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   grid-column: 1/13;
   font-family: Futura;
 }
+
 
 
 

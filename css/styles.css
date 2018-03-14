@@ -70,7 +70,8 @@ img {
 
 .ghost-button:hover, .ghost-button:active {
   color: #750002;
-  background: #ffffff; }
+  background: #ffffff;
+  cursor: pointer; }
 
 /*================knappen================*/
 /*-------------------------------------------------------------------------
