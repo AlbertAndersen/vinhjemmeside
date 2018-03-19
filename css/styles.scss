@@ -120,7 +120,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .header { //farve og længde på header sektionen
 
   height: 100px; // Højden på headeren. Hvis denne ændres skal .logo { top } også ændres
-  background-image: url("../images/logo.png"); // her skal der være et billede
+  background-image: url("../Images/logo.png"); // her skal der være et billede
   background-size: cover; //fylder headeren ud
   grid-column: 2/7;
   min-width: 100px;
@@ -130,7 +130,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 /*================landing==============*/
 .landing {
 
-  background-image: url("../images/moutain-small-BW.png"); // her skal der være et billede
+  background-image: url("../Images/moutain-small-BW.png"); // her skal der være et billede
   background-size: cover; //fylder headeren ud
   background-position: bottom;
   height: $sektion-hojde;
@@ -148,7 +148,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .footer {
   display: grid;
   height: $sektion-hojde;
-  background-image: url("../images/footer_img_bw.jpg");
+  background-image: url("../Images/footer_img_bw.jpg");
   background-size: cover;
 }
 
@@ -167,6 +167,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .contact_flex{
   grid-column: 2/12;
   margin-left: auto;
+  margin-right: auto;
   margin-right: auto;
 
 }
@@ -220,7 +221,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 }
 
 .vinen-flasken, p{
-  padding: 0 30 30 30;
+  padding: 0px 30px 30px 30px;
 }
 .overlayfarvered {
   background-color: rgba(146, 4, 0, 0.61);
@@ -239,7 +240,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .gaarden {
   display: grid;
   height: $sektion-hojde;
-  background-image: url("../images/overlook-winyard-small-bw.png");
+  background-image: url("/images/overlook-winyard-small-bw.png");
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -250,6 +251,8 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   max-width: 700px;
   margin: auto;
 }
+
+
 
 
 /*-------------------------------------------------------------------------
@@ -344,7 +347,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   background-color: #c4f732;
 }
 .stedet-beskrivelse{
-  background-image: url("../images/stedet.png");
+  background-image: url("/images/stedet.png");
   background-position: center;
   background-size: cover;
   grid-column: 1/10;

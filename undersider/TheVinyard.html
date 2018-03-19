@@ -1,0 +1,209 @@
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>The Vinyard</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="../css/hamburgers.css">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/75970a48c3.js"></script>
+    <script src="../javascript/script.js"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Linker til jquery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Linker til smoothscroll fil-->
+    <script src="../javascript/smoothscroll.js"></script>
+
+
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+
+<!--- Menu Overlay. Dette er skjult indtil man aktivere det med javascript ----->
+
+<div id="myNav" class="overlay">
+
+    <!-- Overlay content. De links der kommer frem -->
+    <div class="overlay-content">
+
+        <!-- onclick lukker overlay. #top går til a tag med navn top. class smoothscroll aktivere smoothscroll -->
+        <a href="#top" class="smoothScroll" onclick="closeNav()">HOME</a>
+        <a class="smoothScroll" href="#thevinyard" onclick="closeNav()">THE VINYARD</a>
+        <a class="smoothScroll" href="#theregion" onclick="closeNav()">THE REGION</a>
+        <a href="../undersider/kontakt.html">CONTACT</a>
+
+        <!-- onclick lukker overlay. #footer går til a tag med navn footer. class smoothscroll aktivere smoothscroll -->
+
+    </div>
+</div>
+
+<!--- landing------>
+<header class="grid landing">
+    <h1><span class="red">Wine</span> for a new generation</h1>
+
+    <!--- HEADER ------->
+    <div class="header forside">
+
+
+
+        <a name="top"></a>
+
+        <!-- Det her er knappen der åbner og lukker menuen. -->
+        <button class="hamburger hamburger--spring" type="button" >
+
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+
+        </button>
+
+        <!-- her er javascript der åbner og lukker menuen -->
+        <script>
+            // leder efter noget med klassen .hamburger
+            var hamburger = document.querySelector(".hamburger");
+
+            // gør at der sker noget når man klikker på .hamburger
+            hamburger.addEventListener("click", function() {
+
+                //her er et if else statement
+
+                //hvis .hamburger har klassen is-active sættes værdien på overlay width til 0%
+                if (hamburger.classList.contains("is-active")) {
+                    document.getElementById("myNav").style.width = "0%";
+                    //ellers sættes værdien til 100%
+                } else {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                //skifter mellem at knappen med .hamburger har klassen "is-active"
+                hamburger.classList.toggle("is-active");
+            });
+        </script>
+
+    </div>
+
+</header>
+
+<!------------The Vinyard/gaarden------------------>
+
+<a name="thevinyard"></a>
+<section class="grid gaarden">
+    <div class="gaarden-beskrivelse">
+        <h2 style="text-align: center"><span class="red" style="font-size: 70px">The Vinyard</span></h2>
+        <h2 style="text-align: center">Dominio <span class="red" style="font-size: 30px">de</span> Pontas </h2>
+        <p>Duis a, erat massa lectus sapien lacus nulla amet, urna orci tempor consectetuer wisi donec, amet odio nec elit aliquam justo. In libero proin faucibus sed, pede facilisi dolor vestibulum sed sit. Praesent vel ante, vivamus tempor velit libero tempus pellentesque ligula, vivamus ac eleifend, volutpat posuere a rutrum ducimus in. Velit massa, justo pretium eros, maecenas vestibulum, nec congue in. Ad posuere blandit mattis in cras, porta in nunc. Sed sed non, senectus praesent senectus urna eu ultricies gravida, est cras, eget lectus luctus quam id luctus porttitor, vitae sagittis.</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#readmore").click(function(){
+                $("#more").slideDown("slow");
+            $("#readmore").hide (function() {
+
+            })
+            });
+        });
+    </script>
+
+    <script>
+        $ (document).ready(function () {
+            $("#readless").click(function (e) {
+                $("#more").slideUp(200);
+
+            });
+
+
+
+
+        });
+    </script>
+        <div class="readmore" onclick="readmore"></div>
+        <div id="readmore">READ MORE</div>
+        <div id="more">Duis a, erat massa lectus sapien lacus nulla amet, urna orci tempor consectetuer wisi donec, amet odio nec elit aliquam justo. In libero proin faucibus sed, pede facilisi dolor vestibulum sed sit. Praesent vel ante, vivamus tempor velit libero tempus pellentesque ligula, vivamus ac eleifend, volutpat posuere a rutrum ducimus in. Velit massa, justo pretium eros, maecenas vestibulum, nec congue in. Ad posuere blandit mattis in cras, porta in nunc. Sed sed non, senectus praesent senectus urna eu ultricies gravida, est cras, eget lectus luctus quam id luctus porttitor, vitae sagittis.</div>
+        <div id="readless">READ LESS</div>
+
+    <style>
+        #readmore {
+            text-align: center;
+            border: solid 2px #ffffff;
+        }
+
+        #more {
+            padding: 2px;
+            display: none;
+        }
+
+        #readless{
+            padding: 2px;
+            border: solid 2px white;
+        }
+
+        #readmore:hover{
+
+        }
+    </style>
+
+    <br>
+    <br>
+
+</section>
+<!------------The Region/stedet-------------->
+
+<a name="theregion"></a>
+<section class="grid stedet">
+    <div class="stedet-beskrivelse"></div>
+</section>
+
+
+<!--- footer------>
+
+<footer class="grid footer">
+    <a name="footer"></a>
+    <h1 class="contact_footer">contact</h1>
+
+    <div class="getintouch">Get in touch</div>
+
+    <div class="contact_flex" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+
+        <div class="contect_info"><i class="fa fa-phone" data-fa-transform="rotate-90"></i>
+            <span itemprop="telephone">20 30 20 30</span>
+        </div>
+
+        <div class="contect_info"><i class="fas fa-map-marker-alt"></i>
+            <span itemprop="streetAddress">Vej 3</span>,
+            <span itemprop="addressLocality">Byispanien, spanien</span>
+        </div>
+
+        <div class="contect_info"><i class="far fa-envelope"></i>
+            <span itemprop="email">Contact@pontas.com</span>
+        </div>
+    </div>
+
+    <div class="getintouch">Follow us</div>
+
+    <div class="SoMe">
+        <div class="SoMe_icon"> <i class="fab fa-facebook-square fa-2x"></i> </div>
+
+        <div class="SoMe_icon"> <i class="fab fa-instagram fa-2x"></i> </div>
+    </div>
+
+</footer>
+</body>
+</html>
