@@ -177,7 +177,7 @@ img {
 .gaarden {
   display: grid;
   height: 500;
-  background-image: url("/images/overlook-winyard-small-bw.png");
+  background-image: url("../images/overlook-winyard-small-bw.png");
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover; }
@@ -265,7 +265,7 @@ img {
   background-color: #c4f732; }
 
 .stedet-beskrivelse {
-  background-image: url("/images/stedet.png");
+  background-image: url("../images/stedet.png");
   background-position: center;
   background-size: cover;
   grid-column: 1/10; }
