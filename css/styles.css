@@ -291,6 +291,11 @@ img {
   grid-column: 1/13;
   font-family: Futura; }
 
+.locationInput {
+  height: 30px;
+  width: 70%;
+  margin: 15px; }
+
 /*========================================================================
  ==============================wine====================================
 =========================================================================*/
@@ -408,7 +413,12 @@ img {
 
   .tekstTheWine {
     grid-column: 1/7;
-    grid-row: 1/2; } }
+    grid-row: 1/2; }
+
+  .locationInput {
+    width: 50%;
+    height: 50px;
+    font-size: 20px; } }
 @media screen and (min-width: 1600px) {
   h1 {
     font-size: 100px; } }

@@ -374,6 +374,12 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   font-family: Futura;
 }
 
+.locationInput{
+  height: 30px;
+  width: 70%;
+  margin: 15px;
+}
+
 
 /*========================================================================
  ==============================wine====================================
@@ -532,6 +538,12 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
     grid-column: 1/7;
     grid-row: 1/2;
 
+  }
+
+  .locationInput{
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
   }
 
 }
