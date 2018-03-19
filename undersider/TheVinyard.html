@@ -29,6 +29,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--Linker til smoothscroll fil-->
     <script src="../javascript/smoothscroll.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#readmore").click(function(){
+                $("#more").slideDown("slow");
+                $("#stedet2").slideDown("slow");
+            });
+        });
+        $ (document).ready(function () {
+            $("#readless").click(function (e) {
+                $("#more").slideUp(200);
+                $("#stedet2").slideUp(200);
+
+
+            });
+
+        });
+    </script>
 
 
 
@@ -104,71 +121,35 @@
 <!------------The Vinyard/gaarden------------------>
 
 <a name="thevinyard"></a>
-<section class="grid gaarden">
-    <div class="gaarden-beskrivelse">
+<section class="grid gaarden2">
+    <div class="gaarden-beskrivelse2">
         <h2 style="text-align: center"><span class="red" style="font-size: 70px">The Vinyard</span></h2>
-        <h2 style="text-align: center">Dominio <span class="red" style="font-size: 30px">de</span> Pontas </h2>
         <p>Duis a, erat massa lectus sapien lacus nulla amet, urna orci tempor consectetuer wisi donec, amet odio nec elit aliquam justo. In libero proin faucibus sed, pede facilisi dolor vestibulum sed sit. Praesent vel ante, vivamus tempor velit libero tempus pellentesque ligula, vivamus ac eleifend, volutpat posuere a rutrum ducimus in. Velit massa, justo pretium eros, maecenas vestibulum, nec congue in. Ad posuere blandit mattis in cras, porta in nunc. Sed sed non, senectus praesent senectus urna eu ultricies gravida, est cras, eget lectus luctus quam id luctus porttitor, vitae sagittis.</p>
     </div>
 
-    <script>
-        $(document).ready(function(){
-            $("#readmore").click(function(){
-                $("#more").slideDown("slow");
-            $("#readmore").hide (function() {
-
-            })
-            });
-        });
-    </script>
-
-    <script>
-        $ (document).ready(function () {
-            $("#readless").click(function (e) {
-                $("#more").slideUp(200);
-
-            });
 
 
-
-
-        });
-    </script>
-        <div class="readmore" onclick="readmore"></div>
-        <div id="readmore">READ MORE</div>
-        <div id="more">Duis a, erat massa lectus sapien lacus nulla amet, urna orci tempor consectetuer wisi donec, amet odio nec elit aliquam justo. In libero proin faucibus sed, pede facilisi dolor vestibulum sed sit. Praesent vel ante, vivamus tempor velit libero tempus pellentesque ligula, vivamus ac eleifend, volutpat posuere a rutrum ducimus in. Velit massa, justo pretium eros, maecenas vestibulum, nec congue in. Ad posuere blandit mattis in cras, porta in nunc. Sed sed non, senectus praesent senectus urna eu ultricies gravida, est cras, eget lectus luctus quam id luctus porttitor, vitae sagittis.</div>
-        <div id="readless">READ LESS</div>
+    <div id="readmore" class="ghost-button readmore">READ MORE</div>
+    <div id="more" class="more">Duis a, erat massa lectus sapien lacus nulla amet, urna orci tempor consectetuer wisi donec, amet odio nec elit aliquam justo. In libero proin faucibus sed, pede facilisi dolor vestibulum sed sit. Praesent vel ante, vivamus tempor velit libero tempus pellentesque ligula, vivamus ac eleifend, volutpat posuere a rutrum ducimus in. Velit massa, justo pretium eros, maecenas vestibulum, nec congue in. Ad posuere blandit mattis in cras, porta in nunc. Sed sed non, senectus praesent senectus urna eu ultricies gravida, est cras, eget lectus luctus quam id luctus porttitor, vitae sagittis.</div>
+    <div id="readless" class="ghost-button readless">READ LESS</div>
 
     <style>
-        #readmore {
-            text-align: center;
-            border: solid 2px #ffffff;
-        }
 
         #more {
-            padding: 2px;
+
             display: none;
         }
 
-        #readless{
-            padding: 2px;
-            border: solid 2px white;
-        }
 
-        #readmore:hover{
-
-        }
     </style>
 
-    <br>
-    <br>
 
 </section>
 <!------------The Region/stedet-------------->
 
 <a name="theregion"></a>
-<section class="grid stedet">
-    <div class="stedet-beskrivelse"></div>
+<section id="stedet2" class="grid stedet2">
+
 </section>
 
 

@@ -27,15 +27,12 @@
 }
 */
 
-
 body {
   margin: 0; // Ingen kanter i siden af browser
   font-family: "Futura PT", Futura;
   color: white;
   font-size: 16px;
   font-weight: normal;
-
-
 }
 
 h1, h2, h4, h5, h6 {
@@ -371,7 +368,8 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   background-size: cover;
   background-repeat: no-repeat;
 }
-.buy{
+
+.buy {
   text-align: center;
   grid-column: 1/13;
   font-family: Futura;
@@ -382,6 +380,51 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   width: 70%;
   margin: 15px;
 }
+/*========================================================================
+ ==============================thewinyard====================================
+=========================================================================*/
+
+.gaarden2 {
+  display: grid;
+
+  background-image: url("../images/overlook-winyard-small-bw.png");
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.gaarden-beskrivelse2{
+  grid-column: 2/12;
+  max-width: 700px;
+  margin: auto;
+}
+
+.readmore {
+  grid-row: 2/3;
+  grid-column: 5/7;
+
+}
+
+.readless {
+  grid-row: 2/3;
+  grid-column: 7/9;
+}
+.more{
+  grid-row: 3/4;
+  grid-column: 3/10;
+  padding: 20px;
+}
+
+.stedet2 {
+
+  height: $sektion-hojde;
+  display: none;
+  background-image: url("../images/stedet.png");
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 
 /*========================================================================
@@ -410,9 +453,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 /*-------------------------------------------------------------------------
 ----------------------------------thegrape----------------------
 ---------------------------------------------------------------------------*/
-.theGrape {
 
-}
 .baggrund1{
    background-image: url("../images/wine-table.jpeg");
    grid-column: 1/13;
@@ -421,7 +462,6 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
  }
 
 .tekstTheGrape{
-
   grid-column: 1/13;
   grid-row: 1/2;
   padding-bottom: 50px;
@@ -445,8 +485,6 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   margin-bottom: 50px;
   grid-column: 1/13;
   grid-row: 1/2;
-
-
 }
 
 /*========================================================================
@@ -741,15 +779,15 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 }
 
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {
-      font-size: 20px
-    }
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
+@media screen and (max-height: 450px){
+  .overlay a {
+    font-size: 20px
   }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 
 
