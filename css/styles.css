@@ -292,6 +292,57 @@ img {
   font-family: Futura; }
 
 /*========================================================================
+ ==============================wine====================================
+=========================================================================*/
+/*-------------------------------------------------------------------------
+----------------------------------our wines-----------------------
+---------------------------------------------------------------------------*/
+.ourWines {
+  background-color: #750002; }
+
+.omVinen {
+  grid-column: 1/9;
+  padding-bottom: 50px; }
+
+.flasken {
+  background-color: #c4f732;
+  grid-column: 9/13;
+  background-image: url("../images/merlot-falske.jpg");
+  background-size: cover;
+  background-position: center; }
+
+/*-------------------------------------------------------------------------
+----------------------------------thegrape----------------------
+---------------------------------------------------------------------------*/
+.theGrape {
+  display: no; }
+
+.baggrund1 {
+  background-image: url("../images/wine-table.jpeg");
+  grid-column: 1/13;
+  grid-row: 1/2;
+  background-size: cover; }
+
+.tekstTheGrape {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  padding-bottom: 50px; }
+
+/*-------------------------------------------------------------------------
+----------------------------------theWine----------------------
+---------------------------------------------------------------------------*/
+.baggrund2 {
+  background-image: url("../images/instagrambillede.jpg");
+  grid-column: 1/13;
+  grid-row: 1/2;
+  background-size: cover; }
+
+.tekstTheWine {
+  margin-bottom: 50px;
+  grid-column: 1/13;
+  grid-row: 1/2; }
+
+/*========================================================================
  ==============================Contact====================================
 =========================================================================*/
 /*-------------------------------------------------------------------------
@@ -340,17 +391,30 @@ img {
 /*================Responsivitet===============*/
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 7vw; } }
-@media screen and (min-width: 800px) {
+    font-size: 7vw; }
+
   .contact_flex {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+
+  .baggrund1 {
+    grid-column: 1/13;
+    grid-row: 1/2; }
+
+  .tekstTheGrape {
+    grid-column: 7/13;
+    grid-row: 1/2; }
+
+  .baggrund2 {
+    grid-column: 1/13;
+    grid-row: 1/2; }
+
+  .tekstTheWine {
+    grid-column: 1/7;
+    grid-row: 1/2; } }
 @media screen and (min-width: 1600px) {
   h1 {
-    font-size: 100px; }
-
-  /*================Forside===============*/
-  /*================Kontakt===============*/ }
+    font-size: 100px; } }
 @media screen and (max-width: 981px) {
   /*================generelt===============*/
   .tablet {
