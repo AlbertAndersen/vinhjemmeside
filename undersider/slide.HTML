@@ -9,17 +9,32 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Dominio De Pontas</title>
+    <title>Sigende titel</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="description" content="Free Web tutorials">
+    <!-- Max ca 170-200 karakterer - 600px -->
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <!-- Få unikke og relevante (Skal gå igen på siden)-->
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
+    <meta property="og:title" content="titel">
+    
+    <meta property="og:type" content="website">
+    
+    <meta property="og:url" content="http://www.domain.dk">
+    
+    <meta property="og:image" content="https://www.domain.dk/img.jpg">
+    
+    <meta property="og:description" content="Beskrivelse">
+    
+    <meta property="og:locale" content="da_DK">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="../css/slide.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/hamburgers.css">
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://use.fontawesome.com/75970a48c3.js"></script>
     <script src="https://use.fontawesome.com/75970a48c3.js"></script>
     <script src="../javascript/script.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -28,9 +43,6 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <!--Linker til smoothscroll fil-->
     <script type="text/javascript" src="../javascript/smoothscroll.js"></script>
-
-
-
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -53,7 +65,6 @@
         <a href="slide.HTML">GALLERY</a>
         <a href="kontakt.html">CONTACT</a>
         <a href="#top" class="smoothScroll" onclick="closeNav()">TOP</a>
-
 
         <!-- onclick lukker overlay. #footer går til a tag med navn footer. class smoothscroll aktivere smoothscroll -->
 
@@ -106,93 +117,60 @@
 
 </header>
 
-<!--- kontaktinfo------>
+<section>
+    <br>
+<div class="h1"><h1>Dominio de Pontas Gallery</h1></div>
 
-<section class="grid kontaktinfo" >
+    <br>
 
-    <div class="form">
-        <h2> Wine<span style="color: #750002">tasting</span> and other fascinating events</h2>
+<div id="mobilSlideshow">
+    <img src="../images/brochure.png" id="first" class="active"/>
+    <img src="../merlotnavn.png"/>
+    <img src="../muscatnavn.png"/>
+    <img src="../images/merlotflaske.png"/>
+    <img src="../images/muscatflaske.png"/>
+    <img src="../images/merlotkasse.png"/>
+    <img src="../images/muscatkasse.png" id="last"/>
 
-        <div class="region_beskrivelse">
-            Sign up for our newsletter and be among the first to receive news, invitations and information about events.
-        </div>
+    <div id="box"> <i class="prev"></i> <i class="next"></i> </div>
 
-        <form action="/action_page.php" class="newletter">
-            <input type="text" name="firstname" placeholder="Name" id="conin">
-            <br><br>
-            <input type="text" name="mail" placeholder="E-mail" id="conin">
-            <br><br>
-            <div class="ghost-button" id="send-alert">Sign Up</div>
-        </form>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("#send-alert").click(function(){
-                    alert("WARNING! This feature is unavailable at the moment.");
-                });
-            });
-        </script>
-
-    </div>
-
-    <div class="find-us tablet">
-        <h2>FIND US</h2>
-
-        <br><br>
-
-        <div class="conlist" itemscope itemtype="http://schema.org/PostalAddress">
-        <ul style="list-style-type:none">
-            <li><i class="fa fa-phone" data-fa-transform="rotate-90"></i>
-                <span itemprop="telephone">20 30 20 30</span></li>
-
-            <br><br>
-
-            <li><i class="fa fa-map-marker"></i>
-                <span itemprop="streetAddress">Vej 3</span>,
-                <span itemprop="addressLocality">Byispanien, spanien</span></li>
-
-            <br><br>
-
-            <li><i class="fa fa-envelope"></i>
-                <span itemprop="email">Contact@pontas.com</span></li>
-        </ul>
-        </div>
-
-    </div>
+</div>
 
 
 
-</section>
 
-<!---googlemaps------>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<section class="grid googlemaps" id="map">
+<script type="text/javascript">
+    $(document).ready(function (e) {
 
+        $(".prev").click(function (e) {
+           var active = $("#mobilSlideshow").find(".active");
 
-
-</section>
-
-<script>
-    function myMap() {
-        var mapOptions = {
-            center: new google.maps.LatLng(42.816667, -1.65),
-            zoom: 8,
-        }
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(42.816667, -1.65),
-            map: map,
+           if (active.attr("id") == 'first'){
+               active.removeClass("active")
+               $("#last").addClass("active");
+           } else{
+               active.removeClass("active")
+               active.prev("img").addClass("active");
+           }
         });
-        google.maps.event.addListener(marker,'click',function() {
-            map.setZoom(10);
-            map.setCenter(marker.getPosition());
+
+        $(".next").click(function (e) {
+            var active = $("#mobilSlideshow").find(".active");
+
+            if (active.attr("id") == 'last'){
+                active.removeClass("active")
+                $("#first").addClass("active");
+            } else {
+                active.removeClass("active")
+                active.next("img").addClass("active");
+            }
         });
-    }
+    });
+
 </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC797quRNWIzc71cy2Ay6lB4bdxVfPentg&callback=myMap"></script>
-
+</section>
 <!--- footer------>
 
 <footer class="grid footer" itemscope itemtype="http://schema.org/LocalBusiness">
@@ -228,4 +206,6 @@
 
 </footer>
 
+
 </body>
+</html>

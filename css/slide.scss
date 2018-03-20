@@ -1,0 +1,193 @@
+// Alt der gælder for mobil og højere
+
+* { // Gælder alt på hele siden
+  -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
+  box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
+}
+
+body {
+  margin: 0; // Ingen kanter i siden af browser
+  background-color:rgba(209,212,215,0.31);
+
+
+}
+.h1{
+  text-align: center;
+  font-family: Futura,Serif;
+  color: #750002;
+}
+
+#mobilSlideshow{
+  height: 30%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+
+
+}
+
+#mobilSlideshow img {
+  position: absolute;
+  width: 85%;
+  height: 30%;
+
+}
+
+.active{
+  z-index: 99;
+}
+
+i{
+  border: solid #750002;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.next{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  margin: 100px 0 0 43%;
+}
+
+.prev{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  margin: 100px 0 0 -46%;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 0; // Ingen indre margen fra overskrifter
+}
+
+ul, ol {
+  margin: 0; // Ingen ydre margen fra lister
+  padding: 0; // Ingen indre margen fra lister
+  list-style-position: inside; // List punkter står på linje
+}
+
+li {
+  margin: 0; // Ingen ydre margen fra listpunkter
+}
+
+p {
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+}
+
+// Sikrer billeder er responsive
+img {
+  display: block; // Billeder er et element (laver linjeskift)
+  max-width: 100%; // Bredde må maks fylde 100%
+  height: auto; // Højden skal tilpasse sig
+}
+
+@media screen and (min-width: 768px) {
+  // Alt der ændres i tablet stående fra mobil
+
+.h1{
+  font-size: xx-large;
+}
+
+  #mobilSlideshow{
+    height: 40%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+
+
+  }
+
+  #mobilSlideshow img {
+    position: absolute;
+    width: 85%;
+    height: 40%;
+
+  }
+  #box {
+    margin-top: 30%;
+  }
+  i{
+    border: solid #750002;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+  .next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    margin: -5px 0 0 43%;
+  }
+
+  .prev {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    margin: -5px 0 0 -46%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  .h1{
+    font-size: xx-large;
+  }
+
+  #mobilSlideshow{
+    height: 70%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+
+
+  }
+
+  #mobilSlideshow img {
+    position: absolute;
+    width: 85%;
+    height: 70%;
+
+  }
+  #box{
+    margin-top: 45%;
+  }
+
+  i{
+    border: solid #750002;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 15px;
+  }
+  .next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    margin: -380px 0 0 43%;
+  }
+
+  .prev {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    margin: -380px 0 0 -46%;
+  }
+}
