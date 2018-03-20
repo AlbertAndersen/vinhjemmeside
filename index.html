@@ -1,6 +1,6 @@
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
-<html lang="da">
+<html lang="da" xmlns="http://www.w3.org/1999/html">
 
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
@@ -219,12 +219,20 @@
 </section>
 
 <!---kort----->
+<script>
+    $(document).ready(function(){
+        $(".tester1234").hover(function(){
+            $(".kort").hide();
+        });
+    });
+</script>
+
 <section class="grid kort">
 
     <div class="buy">
         <h2 style="color: black">Buy the wine</h2>
-        <p style="color: #750002">Find a local shop</p>
-        <form action="/action_page.php">
+        <p style="color: #750002" class="tester123">Find a local shop</p>
+        <form action="/action_page.php" class="tester1234" >
             <input type="text" name="City" placeholder="Location" class="locationInput"><br>
             <input class="ghost-button form" type="submit" value="Search">
         </form>
