@@ -7,14 +7,18 @@
 
 body {
   margin: 0; // Ingen kanter i siden af browser
-  background-color:rgba(209,212,215,0.31);
+
 
 
 }
 .h1{
   text-align: center;
-  font-family: Futura,Serif;
   color: #750002;
+}
+
+.galleritekst{
+  text-align: center;
+  color: #333333;
 }
 
 #mobilSlideshow{
