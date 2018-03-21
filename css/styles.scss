@@ -130,7 +130,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   background-image: url("../Images/moutain-small-BW.png"); // her skal der være et billede
   background-size: cover; //fylder headeren ud
   background-position: bottom;
-  height: $sektion-hojde;
+  height: 500;
   grid-template-rows: 100px auto;
 
 }
@@ -144,7 +144,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 /*================Footer==============*/
 .footer {
   display: grid;
-  height: $sektion-hojde;
+  height: 500;
   background-image: url("../Images/footer_img_bw.jpg");
   background-size: cover;
 }
@@ -195,7 +195,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 ---------------------------------------------------------------------------*/
 .vinen {
   display: grid;
-  height: $sektion-hojde;
+  height: 500;
 }
 .vinen-flasken {
   grid-column: 1/5;
@@ -236,7 +236,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .gaarden {
   display: grid;
-  height: $sektion-hojde;
+  height: 500;
   background-image: url("../images/overlook-winyard-small-bw.png");
   background-position: center;
   -webkit-background-size: cover;
@@ -259,8 +259,8 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .instagram{
 
   display: grid;
-  grid-template-rows: $sektion-hojde/2,$sektion-hojde/2;
-  height: $sektion-hojde;
+  grid-template-rows: 500/2,500/2;
+  height: 500;
   background-color: #f76640;
 }
 
@@ -340,7 +340,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .stedet {
   display: grid;
-  height: $sektion-hojde;
+  height: 500;
   background-color: #c4f732;
 }
 .stedet-beskrivelse{
@@ -362,7 +362,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .kort {
   display: grid;
-  height: $sektion-hojde;
+  height: 500;
   background-image: url("../images/kort.png");
   background-position: center;
   background-size: cover;
@@ -417,7 +417,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .stedet2 {
 
-  height: $sektion-hojde;
+  height: 500;
   display: none;
   background-image: url("../images/stedet.png");
   background-position: center;
@@ -496,7 +496,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 ---------------------------------------------------------------------------*/
 .kontaktinfo {
   display: grid;
-  height: $sektion-hojde;
+  height: 500;
   background-color: #e3f787;
 }
 
@@ -538,7 +538,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 ---------------------------------------------------------------------------*/
 .googlemaps {
   display: grid;
-  height: $sektion-hojde;
+  height: 500;
   background-color: #6fcaf7;
 }
 
