@@ -117,7 +117,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .header { //farve og længde på header sektionen
 
   height: 100px; // Højden på headeren. Hvis denne ændres skal .logo { top } også ændres
-  background-image: url("../Images/logo.png"); // her skal der være et billede
+  background-image: url("../images/logo.png"); // her skal der være et billede
   background-size: cover; //fylder headeren ud
   grid-column: 2/7;
   min-width: 100px;
