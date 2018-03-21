@@ -3,13 +3,15 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0;
-  background-color: rgba(209, 212, 215, 0.31); }
+  margin: 0; }
 
 .h1 {
   text-align: center;
-  font-family: Futura,Serif;
   color: #750002; }
+
+.galleritekst {
+  text-align: center;
+  color: #333333; }
 
 #mobilSlideshow {
   height: 30%;
