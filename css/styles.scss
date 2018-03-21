@@ -127,7 +127,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 /*================landing==============*/
 .landing {
 
-  background-image: url("../Images/moutain-small-BW.png"); // her skal der være et billede
+  background-image: url("../images/moutain-small-BW.png"); // her skal der være et billede
   background-size: cover; //fylder headeren ud
   background-position: bottom;
   height: 500;
@@ -145,7 +145,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .footer {
   display: grid;
   height: 500;
-  background-image: url("../Images/footer_img_bw.jpg");
+  background-image: url("../images/footer_img_bw.jpg");
   background-size: cover;
 }
 

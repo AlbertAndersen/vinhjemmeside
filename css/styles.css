@@ -88,7 +88,7 @@ img {
 
 /*================landing==============*/
 .landing {
-  background-image: url("../Images/moutain-small-BW.png");
+  background-image: url("../images/moutain-small-BW.png");
   background-size: cover;
   background-position: bottom;
   height: 500;
@@ -103,7 +103,7 @@ img {
 .footer {
   display: grid;
   height: 500;
-  background-image: url("../Images/footer_img_bw.jpg");
+  background-image: url("../images/footer_img_bw.jpg");
   background-size: cover; }
 
 .contact_footer {
