@@ -8,5 +8,5 @@
 #
 User-agent: *
 Disallow: /README.md
-Disallow: /fejlsider
+Disallow: /fejlSider
 
