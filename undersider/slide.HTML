@@ -52,7 +52,7 @@
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
+</head>¢
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
@@ -125,25 +125,30 @@
 
 <section>
     <br>
+
+    <!--Overskrift til siden-->
 <div class="h1"><h2>Gallery</h2></div>
 
+    <!--brødtekst på siden -->
 <div class="galleritekst"><p>In this gallery, you can see the packaging and design for our Merlot and Muscat wines. <br>
     Wine for beginners, who may not know much about wine, but can recognize good design when they see it.</p>
 </div>
 
-
+<!-- Her tilføjes slideshow billederne -->
 
     <br>
 
 <div id="mobilSlideshow">
     <img src="../images/brochure.png" id="first" class="active"/>
-    <img src="../merlotnavn.png"/>
-    <img src="../muscatnavn.png"/>
+    <img src="../images/merlotnavn.png"/>
+    <img src="../images/muscatnavn.png"/>
     <img src="../images/merlotflaske.png"/>
     <img src="../images/muscatflaske.png"/>
     <img src="../images/merlotkasse.png"/>
     <img src="../images/muscatkasse.png" id="last"/>
 
+
+<!--Dette er knapper. Disse bruges til at køre frem og tilbage i slideshowet-->
     <div id="box"> <i class="prev"></i> <i class="next"></i> </div>
 
 </div>
@@ -171,6 +176,7 @@
         $(".next").click(function (e) {
             var active = $("#mobilSlideshow").find(".active");
 
+            //Hvis man er på sidste billede, og klipper på next knappen kommer man hen på første billede
             if (active.attr("id") == 'last'){
                 active.removeClass("active")
                 $("#first").addClass("active");

@@ -41,7 +41,8 @@ body {
   z-index: 99;
 }
 
-i{
+
+i{ // Dette designet på pil knapperne
   border: solid #750002;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -49,7 +50,7 @@ i{
 }
 
 .next{
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); //Sørger for at pilen vender mod højre
   -webkit-transform: rotate(-45deg);
   cursor: pointer;
   z-index: 100;
@@ -58,7 +59,7 @@ i{
 }
 
 .prev{
-  transform: rotate(135deg);
+  transform: rotate(135deg);//Sørger for at pilen vender mod venstre
   -webkit-transform: rotate(135deg);
   cursor: pointer;
   z-index: 100;
