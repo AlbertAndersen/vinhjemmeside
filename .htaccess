@@ -1,2 +1,5 @@
 ErrorDocument 403 /fejlSider/403.html
 ErrorDocument 404 /fejlSider/404.html
+
+RewriteEngine On
+RewriteRule ^undersider/(.*)$ /$1 [L,R=301]
