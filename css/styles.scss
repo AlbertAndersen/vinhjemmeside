@@ -401,16 +401,16 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .readmore {
   grid-row: 2/3;
-  grid-column: 5/7;
+  grid-column: 6/8;
 
 }
 
 .readless {
-  grid-row: 2/3;
-  grid-column: 7/9;
+  grid-row: 3/4;
+  grid-column: 6/8;
 }
 .more{
-  grid-row: 3/4;
+  grid-row: 4/5;
   grid-column: 3/10;
   padding: 20px;
 }
