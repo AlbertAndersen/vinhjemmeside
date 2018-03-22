@@ -43,7 +43,7 @@ h1, h2, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 h2 {
@@ -144,7 +144,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 /*================Footer==============*/
 .footer {
   display: grid;
-  height: 500;
+  height: 500px;
   background-image: url("../images/footer_img_bw.jpg");
   background-size: cover;
 }
@@ -195,7 +195,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 ---------------------------------------------------------------------------*/
 .vinen {
   display: grid;
-  height: 500;
+  height: 500px;
 }
 .vinen-flasken {
   grid-column: 1/5;
@@ -236,7 +236,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .gaarden {
   display: grid;
-  height: 500;
+  height: 500px;
   background-image: url("../images/overlook-winyard-small-bw.png");
   background-position: center;
   -webkit-background-size: cover;
@@ -260,7 +260,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
   display: grid;
   grid-template-rows: 500/2,500/2;
-  height: 500;
+  height: 500px;
   background-color: #f76640;
 }
 
@@ -544,13 +544,21 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 /*================Responsivitet===============*/
 
+@media screen and (max-width: 800px) {
+  // Alt under 800.
 
+  #conin{
+    width: 80%;
+    height: 15px;
+  }
+
+  }
 
 
 @media screen and (min-width: 800px) {
   // Alt over 660. Tablet og Desktop
   h1 {
-    font-size: 7vw;
+    font-size: 50px;
   }
 
   .contact_flex{
