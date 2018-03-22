@@ -88,7 +88,7 @@ img {
 
 /*================landing==============*/
 .landing {
-  background-image: url("../images/moutain-small-BW.png");
+  background-image: url("../images/moutain-small-BW.jpg");
   background-size: cover;
   background-position: bottom;
   height: 500;
@@ -151,13 +151,13 @@ img {
 
 .vinen-label {
   grid-column: 5/9;
-  background-image: url("../images/merlot.png");
+  background-image: url("../images/merlot.jpg");
   background-position: center;
   background-size: cover; }
 
 .vinen-tekst {
   grid-column: 9/13;
-  background-image: url("../images/berries-closeup-small-bw.png");
+  background-image: url("../images/berries-closeup-small-bw.jpg");
   background-size: cover; }
 
 .vinen-flasken, p {
@@ -177,7 +177,7 @@ img {
 .gaarden {
   display: grid;
   height: 500px;
-  background-image: url("../images/overlook-winyard-small-bw.png");
+  background-image: url("../images/overlook-winyard-small-bw.jpg");
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover; }
@@ -265,13 +265,13 @@ img {
   background-color: #c4f732; }
 
 .stedet-beskrivelse {
-  background-image: url("../images/stedet.png");
+  background-image: url("../images/stedet.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 1/10; }
 
 .stedet-boks {
-  background-image: url("../images/muscat-kasse.png");
+  background-image: url("../images/muscat-kasse.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 10/13; }
@@ -282,7 +282,7 @@ img {
 .kort {
   display: grid;
   height: 500;
-  background-image: url("../images/kort.png");
+  background-image: url("../images/kort.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -302,7 +302,7 @@ img {
 =========================================================================*/
 .gaarden2 {
   display: grid;
-  background-image: url("../images/overlook-winyard-small-bw.png");
+  background-image: url("../images/overlook-winyard-small-bw.jpg");
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover; }
@@ -328,7 +328,7 @@ img {
 .stedet2 {
   height: 500;
   display: none;
-  background-image: url("../images/stedet.png");
+  background-image: url("../images/stedet.jpg");
   background-position: center;
   background-size: cover; }
 
@@ -400,7 +400,7 @@ img {
 
 .find-us {
   grid-column: 9/13;
-  background-image: url("../images/propper.png");
+  background-image: url("../images/propper.jpg");
   background-position: inherit;
   background-size: cover; }
 

@@ -127,7 +127,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 /*================landing==============*/
 .landing {
 
-  background-image: url("../images/moutain-small-BW.png"); // her skal der være et billede
+  background-image: url("../images/moutain-small-BW.jpg"); // her skal der være et billede
   background-size: cover; //fylder headeren ud
   background-position: bottom;
   height: 500;
@@ -206,14 +206,14 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .vinen-label {
   grid-column: 5/9;
-  background-image: url("../images/merlot.png");
+  background-image: url("../images/merlot.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .vinen-tekst {
   grid-column: 9/13;
-  background-image: url("../images/berries-closeup-small-bw.png");
+  background-image: url("../images/berries-closeup-small-bw.jpg");
   background-size: cover;
 }
 
@@ -237,7 +237,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .gaarden {
   display: grid;
   height: 500px;
-  background-image: url("../images/overlook-winyard-small-bw.png");
+  background-image: url("../images/overlook-winyard-small-bw.jpg");
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -344,13 +344,13 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
   background-color: #c4f732;
 }
 .stedet-beskrivelse{
-  background-image: url("../images/stedet.png");
+  background-image: url("../images/stedet.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 1/10;
 }
 .stedet-boks{
-  background-image: url("../images/muscat-kasse.png");
+  background-image: url("../images/muscat-kasse.jpg");
   background-position: center;
   background-size: cover;
   grid-column: 10/13;
@@ -363,7 +363,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .kort {
   display: grid;
   height: 500;
-  background-image: url("../images/kort.png");
+  background-image: url("../images/kort.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -387,7 +387,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 .gaarden2 {
   display: grid;
 
-  background-image: url("../images/overlook-winyard-small-bw.png");
+  background-image: url("../images/overlook-winyard-small-bw.jpg");
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -419,7 +419,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
   height: 500;
   display: none;
-  background-image: url("../images/stedet.png");
+  background-image: url("../images/stedet.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -511,7 +511,7 @@ $sektion-hojde: 500; //det her er standard højden på sektioner i px
 
 .find-us {
   grid-column: 9/13;
-  background-image: url("../images/propper.png");
+  background-image: url("../images/propper.jpg");
   background-position: inherit;
   background-size: cover;
 }
