@@ -1,2 +1,2 @@
-ErrorDocument 403 ../fejlSider/403.html
-ErrorDocument 404 ../fejlSider/404.html
+ErrorDocument 403 /fejlSider/403.html
+ErrorDocument 404 /fejlSider/404.html
